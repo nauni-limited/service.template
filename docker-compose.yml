@@ -1,0 +1,44 @@
+version: "3.4"
+
+services:
+
+  service-db:
+    container_name: service-db
+    build: ./docker/db
+    ports:
+      - "50001:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+
+  service-fpm:
+    container_name: service-fpm
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      target: dev
+    environment:
+      APP_ENV: dev
+      APP_SECRET: bdc6c3bd25b539b62994d825de84875e
+
+      DATABASE_HOSTNAME: db
+      DATABASE_USERNAME: root
+      DATABASE_PASSWORD: example
+      DATABASE_NAME: service
+
+      DOCTRINE_DEV_MODE: "true"
+    depends_on:
+      - service-db
+    volumes:
+      - ./:/service:delegated
+    stdin_open: true
+    tty: true
+
+  service-web:
+    container_name: service-web
+    build: ./docker/web
+    depends_on:
+      - service-fpm
+    volumes:
+      - ./:/service
+    ports:
+      - "50000:80"

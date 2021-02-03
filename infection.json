@@ -1,0 +1,17 @@
+{
+    "timeout": 30,
+    "source": {
+        "directories": [
+            "src"
+        ],
+        "excludes": [
+        ]
+    },
+    "logs": {
+        "text": "php://stdout"
+    },
+    "mutators": {
+        "@default": true,
+        "@cast": false
+    }
+}
