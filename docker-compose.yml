@@ -4,7 +4,7 @@ services:
 
   service-db:
     container_name: service-db
-    build: ./docker/db
+    build: .docker/db
     ports:
       - "50001:3306"
     environment:
@@ -14,8 +14,10 @@ services:
     container_name: service-fpm
     build:
       context: ./
-      dockerfile: Dockerfile
+      dockerfile: .docker/php/Dockerfile
       target: dev
+    ports:
+      - "9003:9003"
     environment:
       APP_ENV: dev
       APP_SECRET: bdc6c3bd25b539b62994d825de84875e
@@ -35,7 +37,7 @@ services:
 
   service-web:
     container_name: service-web
-    build: ./docker/web
+    build: .docker/web
     depends_on:
       - service-fpm
     volumes:

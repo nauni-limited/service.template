@@ -1,8 +1,0 @@
-includes:
-	- tests/PHPStan/extension.neon
-
-parameters:
-	checkMissingIterableValueType: false
-	ignoreErrors:
-
-services:

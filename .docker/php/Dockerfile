@@ -24,6 +24,9 @@ WORKDIR /service
 # Create a developer image for working on Service and running unit tests
 FROM base AS dev
 
+COPY .docker/php/config/php.ini /usr/local/etc/php/
+COPY .docker/php/config/docker-php-ext-xdebug.ini /usr/local/etc/php/conf.d/
+
 RUN curl -s https://getcomposer.org/installer | php -- \
         --install-dir=/usr/local/bin \
         --filename=composer \
@@ -39,12 +42,7 @@ RUN curl -s https://getcomposer.org/installer | php -- \
     && docker-php-ext-enable xdebug \
     && apk del .build-dependency
 
-COPY docker/php/php.ini /usr/local/etc/php/
-COPY docker/php/docker-php-ext-xdebug.ini /usr/local/etc/php/conf.d/
-
 USER $USER
-RUN  wget https://get.symfony.com/cli/installer -O - | bash \
-    && echo 'export PATH="~/.symfony/bin:$PATH"' >> ~/.bashrc \
-    && echo 'export PATH="/service/vendor/bin:$PATH"' >> ~/.bashrc \
-    && echo "alias service=/service/bin/console" >> ~/.bashrc \
-    && echo "eval \$(service _completion --generate-hook --shell-type bash --program service)" >> ~/.bashrc
+RUN wget https://get.symfony.com/cli/installer -O - | bash \
+    && echo 'export PATH="$HOME//.symfony/bin:$PATH"' >> ~/.bashrc \
+    && echo 'export PATH="/service/bin:$PATH"' >> ~/.bashrc
