@@ -16,9 +16,9 @@ services:
       context: ./
       dockerfile: .docker/php/Dockerfile
       target: dev
-    ports:
-      - "9003:9003"
     environment:
+      PHP_IDE_CONFIG: serverName=service.template
+
       APP_ENV: dev
       APP_SECRET: bdc6c3bd25b539b62994d825de84875e
 

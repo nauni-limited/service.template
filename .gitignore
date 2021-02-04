@@ -1,17 +1,17 @@
 ###> JetBrains/PHPStorm
 /.idea
 
-###> symfony/cache
+###> vendor
 /vendor
 
-###> symfony/cache
+###> symfony/var
 /var
 
 ###> phpunit/phpunit ###
 /phpunit.xml
 .phpunit.result.cache
+.phpunit
 /coverage
 
 ###> infection ###
 /infection.log
-
