@@ -28,6 +28,7 @@
     </filter>
 
     <listeners>
+        <listener class="JohnKary\PHPUnit\Listener\SpeedTrapListener" />
         <listener class="Symfony\Bridge\PhpUnit\SymfonyTestsListener" />
     </listeners>
 </phpunit>
