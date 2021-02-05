@@ -8,8 +8,9 @@ use Attribute;
 class Suite
 {
     public function __construct(
-        public string $suite
-    ) {}
+        public string | array $suite
+    ) {
+    }
 
     public function getSuite(): string
     {
