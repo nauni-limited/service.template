@@ -2,9 +2,10 @@
 
 namespace App\Controller;
 
-use App\Attribute\Suite;
+
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use WeDoCode\Bundle\WeDoCodeTestSuiteBundle\Attribute\Suite;
 
 #[Suite('lucky')]
 class LuckyController
