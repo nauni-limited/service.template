@@ -216,6 +216,9 @@
     "symfony/yaml": {
         "version": "v5.2.3"
     },
+    "we-do-code-ltd/test-suite-bundle": {
+        "version": "dev-master"
+    },
     "webmozart/assert": {
         "version": "1.9.1"
     }

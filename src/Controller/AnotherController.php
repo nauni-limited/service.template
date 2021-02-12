@@ -6,10 +6,10 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use WeDoCode\Bundle\WeDoCodeTestSuiteBundle\Attribute\Suite;
 
-#[Suite(['controller', 'lucky'])]
-class LuckyController
+#[Suite('another')]
+class AnotherController
 {
-    #[Route('/lucky/number', name: 'luck_number', methods: ['GET', 'HEAD'])]
+    #[Route('/another/number', name: 'another_number', methods: ['GET', 'HEAD'])]
     public function number(): JsonResponse
     {
         $number = random_int(0, 100);

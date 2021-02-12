@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7a9dc7d18a80b181a7053d208a61c14e",
+    "content-hash": "d085245c8cba615fcc2bbf8bd03c9b7f",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -3470,6 +3470,66 @@
             "time": "2021-02-03T04:42:09+00:00"
         },
         {
+            "name": "we-do-code-ltd/test-suite-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/we-do-code-ltd/test-suite-bundle.git",
+                "reference": "2bc0a217a956b58a60eb46c2bd8b8c5069c98e41"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/we-do-code-ltd/test-suite-bundle/zipball/2bc0a217a956b58a60eb46c2bd8b8c5069c98e41",
+                "reference": "2bc0a217a956b58a60eb46c2bd8b8c5069c98e41",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "behat/behat": "^3.8",
+                "infection/infection": "^0.21",
+                "phpunit/phpunit": "^9.5",
+                "squizlabs/php_codesniffer": "^3.5",
+                "symfony/config": "^5.2",
+                "symfony/console": "^5.2",
+                "symfony/dependency-injection": "^5.2",
+                "symfony/finder": "^5.2",
+                "symfony/serializer": "^5.2"
+            },
+            "default-branch": true,
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "WeDoCode\\Bundle\\WeDoCodeTestSuiteBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tamas Dobo",
+                    "email": "tom@wedocode.co.uk"
+                },
+                {
+                    "name": "We Do Code Ltd",
+                    "homepage": "https://www.wedocode.co.uk"
+                }
+            ],
+            "description": "Provides a common automated test suit with filer based on attributes",
+            "homepage": "https://www.wedocode.co.uk",
+            "support": {
+                "issues": "https://github.com/we-do-code-ltd/test-suite-bundle/issues",
+                "source": "https://github.com/we-do-code-ltd/test-suite-bundle/tree/master"
+            },
+            "time": "2021-02-09T18:39:56+00:00"
+        },
+        {
             "name": "webmozart/assert",
             "version": "1.9.1",
             "source": {
@@ -3526,7 +3586,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "we-do-code-ltd/test-suite-bundle": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
