@@ -28,6 +28,9 @@ services:
       DATABASE_NAME: service
 
       DOCTRINE_DEV_MODE: "true"
+      PATH: "$PATH:/home/user/bin:/service/bin"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     depends_on:
       - service-db
     volumes:

@@ -3,7 +3,7 @@ FROM php:8-fpm-alpine as base
 ENV USER=user
 ENV GROUP=docker
 ENV UID=1000
-ENV GID=127
+ENV GID=1000
 
 RUN apk update \
     && apk upgrade \
@@ -27,10 +27,7 @@ FROM base AS dev
 COPY .docker/php/config/php.ini /usr/local/etc/php/
 COPY .docker/php/config/docker-php-ext-xdebug.ini /usr/local/etc/php/conf.d/
 
-RUN curl -s https://getcomposer.org/installer | php -- \
-        --install-dir=/usr/local/bin \
-        --filename=composer \
-    && apk add --no-cache \
+RUN apk add --no-cache \
         bash-completion \
         git \
         vim \
@@ -43,6 +40,13 @@ RUN curl -s https://getcomposer.org/installer | php -- \
     && apk del .build-dependency
 
 USER $USER
-RUN wget https://get.symfony.com/cli/installer -O - | bash \
-    && echo 'export PATH="$HOME//.symfony/bin:$PATH"' >> ~/.bashrc \
-    && echo 'export PATH="/service/bin:$PATH"' >> ~/.bashrc
+RUN mkdir -p $HOME//bin \
+    && curl -s https://getcomposer.org/installer | php -- \
+            --install-dir=$HOME/bin \
+            --filename=composer \
+    && wget https://get.symfony.com/cli/installer \
+        --output-document \
+        - | bash \
+    && mv $HOME/.symfony/bin/* $HOME/bin/ \
+    && rm -rf $HOME/.symfony $HOME/.composer \
+    && echo 'export PATH="$PATH"' >> ~/.bashrc
