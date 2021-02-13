@@ -3475,12 +3475,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/we-do-code-ltd/test-suite-bundle.git",
-                "reference": "2bc0a217a956b58a60eb46c2bd8b8c5069c98e41"
+                "reference": "6e4d4c57068ff31a7168282b8acc4aaf68292e4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/we-do-code-ltd/test-suite-bundle/zipball/2bc0a217a956b58a60eb46c2bd8b8c5069c98e41",
-                "reference": "2bc0a217a956b58a60eb46c2bd8b8c5069c98e41",
+                "url": "https://api.github.com/repos/we-do-code-ltd/test-suite-bundle/zipball/6e4d4c57068ff31a7168282b8acc4aaf68292e4c",
+                "reference": "6e4d4c57068ff31a7168282b8acc4aaf68292e4c",
                 "shasum": ""
             },
             "require": {
@@ -3494,6 +3494,7 @@
                 "symfony/config": "^5.2",
                 "symfony/console": "^5.2",
                 "symfony/dependency-injection": "^5.2",
+                "symfony/dom-crawler": "^5.2",
                 "symfony/finder": "^5.2",
                 "symfony/serializer": "^5.2"
             },
@@ -3521,13 +3522,13 @@
                     "homepage": "https://www.wedocode.co.uk"
                 }
             ],
-            "description": "Provides a common automated test suit with filer based on attributes",
+            "description": "Provides a common automated test suite with filter based on attributes",
             "homepage": "https://www.wedocode.co.uk",
             "support": {
                 "issues": "https://github.com/we-do-code-ltd/test-suite-bundle/issues",
                 "source": "https://github.com/we-do-code-ltd/test-suite-bundle/tree/master"
             },
-            "time": "2021-02-09T18:39:56+00:00"
+            "time": "2021-02-12T17:20:47+00:00"
         },
         {
             "name": "webmozart/assert",

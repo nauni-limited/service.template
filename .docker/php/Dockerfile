@@ -19,7 +19,7 @@ RUN apk update \
            --uid "$UID" \
            "$USER"
 
-WORKDIR /service
+WORKDIR /var/local/src/service
 
 # Create a developer image for working on Service and running unit tests
 FROM base AS dev

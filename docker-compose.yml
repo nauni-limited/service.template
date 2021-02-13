@@ -28,13 +28,13 @@ services:
       DATABASE_NAME: service
 
       DOCTRINE_DEV_MODE: "true"
-      PATH: "$PATH:/home/user/bin:/service/bin"
+      PATH: "$PATH:/home/user/bin:/var/local/src/service/bin"
     extra_hosts:
       - "host.docker.internal:host-gateway"
     depends_on:
       - service-db
     volumes:
-      - ./:/service:delegated
+      - ./:/var/local/src/service:delegated
     stdin_open: true
     tty: true
 
@@ -44,6 +44,6 @@ services:
     depends_on:
       - service-fpm
     volumes:
-      - ./:/service
+      - ./:/var/local/src/service:delegated
     ports:
       - "50000:80"
