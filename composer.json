@@ -1,4 +1,6 @@
 {
+    "name": "we-do-code-ltd/service-template",
+    "description": "Just a Project Template",
     "type": "project",
     "license": "proprietary",
     "minimum-stability": "dev",
@@ -27,6 +29,7 @@
         "infection/infection": "^0.21",
         "johnkary/phpunit-speedtrap": "^4.0-dev",
         "phpunit/phpunit": "^9.5",
+        "phpstan/phpstan": "^0.12",
         "squizlabs/php_codesniffer": "^3.5",
         "we-do-code-ltd/test-suite-bundle": "dev-master"
     },

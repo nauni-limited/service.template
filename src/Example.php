@@ -12,7 +12,7 @@ class Example
         return $a + $b;
     }
 
-    public function complicated(string $a, string $b, bool $c)
+    public function complicated(int $a, int $b, bool $c): int
     {
         return $c ? $a + $b : $a * $b;
     }

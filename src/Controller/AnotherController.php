@@ -10,6 +10,7 @@ use WeDoCode\Bundle\WeDoCodeTestSuiteBundle\Attribute\Suite;
 class AnotherController
 {
     #[Route('/another/number', name: 'another_number', methods: ['GET', 'HEAD'])]
+
     public function number(): JsonResponse
     {
         $number = random_int(0, 100);
