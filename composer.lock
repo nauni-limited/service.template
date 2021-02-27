@@ -3997,16 +3997,16 @@
         },
         {
             "name": "infection/infection",
-            "version": "0.21.1",
+            "version": "0.21.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/infection/infection.git",
-                "reference": "3248417c831cc7953aac105440f82e4aaea17edf"
+                "reference": "c7d3d6ee744e8520e44a4590ac4bb2419e813f1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/infection/infection/zipball/3248417c831cc7953aac105440f82e4aaea17edf",
-                "reference": "3248417c831cc7953aac105440f82e4aaea17edf",
+                "url": "https://api.github.com/repos/infection/infection/zipball/c7d3d6ee744e8520e44a4590ac4bb2419e813f1e",
+                "reference": "c7d3d6ee744e8520e44a4590ac4bb2419e813f1e",
                 "shasum": ""
             },
             "require": {
@@ -4106,7 +4106,7 @@
             ],
             "support": {
                 "issues": "https://github.com/infection/infection/issues",
-                "source": "https://github.com/infection/infection/tree/0.21.1"
+                "source": "https://github.com/infection/infection/tree/0.21.2"
             },
             "funding": [
                 {
@@ -4118,7 +4118,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2021-02-22T13:03:48+00:00"
+            "time": "2021-02-25T21:09:10+00:00"
         },
         {
             "name": "johnkary/phpunit-speedtrap",
@@ -4126,12 +4126,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnkary/phpunit-speedtrap.git",
-                "reference": "434865fe20fd2791f53a2ff5bf409a42a5a3771c"
+                "reference": "d3e1a6f4bf86664008c67b1e5f679ddc1205b7f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnkary/phpunit-speedtrap/zipball/434865fe20fd2791f53a2ff5bf409a42a5a3771c",
-                "reference": "434865fe20fd2791f53a2ff5bf409a42a5a3771c",
+                "url": "https://api.github.com/repos/johnkary/phpunit-speedtrap/zipball/d3e1a6f4bf86664008c67b1e5f679ddc1205b7f1",
+                "reference": "d3e1a6f4bf86664008c67b1e5f679ddc1205b7f1",
                 "shasum": ""
             },
             "require": {
@@ -4171,7 +4171,7 @@
                 "issues": "https://github.com/johnkary/phpunit-speedtrap/issues",
                 "source": "https://github.com/johnkary/phpunit-speedtrap/tree/master"
             },
-            "time": "2020-12-30T04:28:08+00:00"
+            "time": "2021-02-27T16:59:59+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -4671,16 +4671,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.78",
+            "version": "0.12.79",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "eecce8d2ee3cac6769f37b4cb1998b2715f82984"
+                "reference": "dd7769915648b704b9bd12925994457f1c2c8442"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/eecce8d2ee3cac6769f37b4cb1998b2715f82984",
-                "reference": "eecce8d2ee3cac6769f37b4cb1998b2715f82984",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/dd7769915648b704b9bd12925994457f1c2c8442",
+                "reference": "dd7769915648b704b9bd12925994457f1c2c8442",
                 "shasum": ""
             },
             "require": {
@@ -4711,7 +4711,7 @@
             "description": "PHPStan - PHP Static Analysis Tool",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/0.12.78"
+                "source": "https://github.com/phpstan/phpstan/tree/0.12.79"
             },
             "funding": [
                 {
@@ -4727,7 +4727,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-20T13:24:36+00:00"
+            "time": "2021-02-25T16:44:57+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -6784,12 +6784,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/we-do-code-ltd/test-suite-bundle.git",
-                "reference": "617863ec8985b470fea510d2e1b8989a7d0c4dbe"
+                "reference": "93f4fb815159f5af730e5f8505a54f775edd9f59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/we-do-code-ltd/test-suite-bundle/zipball/617863ec8985b470fea510d2e1b8989a7d0c4dbe",
-                "reference": "617863ec8985b470fea510d2e1b8989a7d0c4dbe",
+                "url": "https://api.github.com/repos/we-do-code-ltd/test-suite-bundle/zipball/93f4fb815159f5af730e5f8505a54f775edd9f59",
+                "reference": "93f4fb815159f5af730e5f8505a54f775edd9f59",
                 "shasum": ""
             },
             "require": {
@@ -6838,7 +6838,7 @@
                 "issues": "https://github.com/we-do-code-ltd/test-suite-bundle/issues",
                 "source": "https://github.com/we-do-code-ltd/test-suite-bundle/tree/master"
             },
-            "time": "2021-02-25T00:03:14+00:00"
+            "time": "2021-02-25T00:16:27+00:00"
         },
         {
             "name": "webmozart/path-util",
