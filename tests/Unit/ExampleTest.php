@@ -4,14 +4,17 @@ namespace App\Tests\Unit;
 
 use App\Example;
 use PHPUnit\Framework\TestCase;
-use WeDoCode\Bundle\WeDoCodeTestSuiteBundle\Attribute\Suite;
+use Nauni\Bundle\NauniTestSuiteBundle\Attribute\Suite;
 
 #[Suite('example')]
 class ExampleTest extends TestCase
 {
     public function testSimple()
     {
-        $this->assertEquals(5, (new Example())->simple(2, 3));
+        $example = (new Example());
+        $result = $example->simple(2, 3);
+
+        $this->assertEquals(5, $result);
     }
 
     public function testComplicated()

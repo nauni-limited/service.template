@@ -4,13 +4,12 @@ namespace App\Controller;
 
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\JsonResponse;
-use WeDoCode\Bundle\WeDoCodeTestSuiteBundle\Attribute\Suite;
+use Nauni\Bundle\NauniTestSuiteBundle\Attribute\Suite;
 
 #[Suite(['controller', 'lucky'])]
 class LuckyController
 {
-    #[Route('/lucky/number', name: 'luck_number', methods: ['GET', 'HEAD'])]
-
+    #[Route('/lucky/number', name: 'luck_number', methods: ['GET'])]
     public function number(): JsonResponse
     {
         $number = random_int(0, 100);

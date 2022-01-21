@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset name="WeDoCode">
+<ruleset name="Nauni">
 
     <rule ref="PSR1">
         <exclude name="PSR1.Files.SideEffects" />
@@ -45,7 +45,5 @@
         <exclude name="Squiz.Arrays.ArrayDeclaration.SpaceBeforeDoubleArrow" />
         <exclude name="Squiz.Arrays.ArrayDeclaration.ValueNotAligned" />
     </rule>
-
-    <rule ref="./src" />
 
 </ruleset>

@@ -4,7 +4,7 @@ namespace App\Controller;
 
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\JsonResponse;
-use WeDoCode\Bundle\WeDoCodeTestSuiteBundle\Attribute\Suite;
+use Nauni\Bundle\NauniTestSuiteBundle\Attribute\Suite;
 
 #[Suite('another')]
 class AnotherController

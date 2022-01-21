@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+  service-fpm:
+    container_name: service-fpm
+    build:
+      context: ./
+      dockerfile: .docker/php/Dockerfile
+      target: dev-xdebug
+    environment:
+      PHP_IDE_CONFIG: serverName=service.template
+
+      APP_ENV: dev
+      APP_SECRET: bdc6c3bd25b539b62994d825de84875e
+
+      DATABASE_HOSTNAME: db
+      DATABASE_USERNAME: root
+      DATABASE_PASSWORD: example
+      DATABASE_NAME: service
+
+      DOCTRINE_DEV_MODE: "true"
+      PATH: "$PATH:/home/user/bin:/var/local/src/bin"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - service-db
+    volumes:
+      - ./:/var/local/src:delegated
+    stdin_open: true
+    tty: true

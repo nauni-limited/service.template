@@ -1,4 +1,4 @@
-version: "3.4"
+version: "3.8"
 
 services:
 
@@ -9,6 +9,18 @@ services:
       - "50001:3306"
     environment:
       MYSQL_ROOT_PASSWORD: example
+
+  service-db-test:
+    container_name: service-db-test
+    build: .docker/db
+    environment:
+      MYSQL_ROOT_PASSWORD: top_secret_test_password
+      MYSQL_DATABASE: training-api-test
+      MYSQL_USER: training-api-test-user
+      MYSQL_PASSWORD: user_secret_test_password
+    volumes:
+      - type: tmpfs
+        target: /var/lib/mysql
 
   service-fpm:
     container_name: service-fpm

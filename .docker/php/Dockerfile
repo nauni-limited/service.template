@@ -1,4 +1,4 @@
-FROM php:8-fpm-alpine as base
+FROM php:8.1-fpm-alpine as base
 
 ENV USER=user
 ENV GROUP=docker

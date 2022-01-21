@@ -2,7 +2,7 @@
 
 namespace App;
 
-use WeDoCode\Bundle\WeDoCodeTestSuiteBundle\Attribute\Suite;
+use Nauni\Bundle\NauniTestSuiteBundle\Attribute\Suite;
 
 #[Suite('example')]
 class Example

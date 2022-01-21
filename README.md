@@ -1,4 +1,4 @@
-## WeDoCode Service / API template
+## Nauni Service / API template
 
 
 #### Development Dependency
