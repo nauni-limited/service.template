@@ -21,6 +21,10 @@ git clone git@github.com:nauni-limited/training-api.git
 ### Rename the service in the docker-compose files
 - Replace "service-" to you liking. In this example we will use "training-api-"
 
+### Use Xdebug and change exposed ports
+- Rename docker-compose.override.yml and change it as you like
+- Using pcov is faster, only use xdebug when you are debugging code
+
 #### Run the project for the first time
 ```sh
 docker-compose pull
